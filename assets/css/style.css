@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #141414;
+    --color-base2: black;
+    --color-brand: #4db55c;
+    --color-brand2: #19e437;
+	--font-base: "Montserrat";
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+	max-width: 500px;
+    width: 100%;
+}
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+	background-color: darkgreen;
+}
+/* .social-icons a:hover i {
+	color: gold;
+} */
+#languageSwitch {
+	cursor: pointer;
+}
+.eb-left img {
+	max-width: 180px;
+}
+.full-width {
+	width: 100%;
+	max-width: none;
+	opacity: 0.5;
+}
+#pitch {
+	max-height: 500px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+.text-over-img {
+	z-index: 100;
+	position: absolute;
+	width: 100%;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+footer {
+    background-color: var(--color-base);
+}
+.star {
+	color: gold;
+}
+.social-icons-footer a {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 18px;
+}
+.social-icons-footer a:hover {
+	background-color: darkgreen;
+}
+
+/* Scroll up button */
+#btn-back-to-top {
+	position: fixed;
+	/* bottom: 40px;
+	right: 5px; */
+	bottom: 2rem;
+	right: 0.5rem;
+	display: none;
+}
+#btn-back-to-top i {
+	color: var(--color-brand2);
+	opacity: 0.5;
+}
+#btn-back-to-top i:hover {
+	opacity: 1;
+}
